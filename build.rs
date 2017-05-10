@@ -59,7 +59,7 @@ fn main() {
   //gen_gtk();
 }
 
-#[cfg(unix)]
+#[cfg(target_os = "linux")]
 fn create_links(mut cef_path: path::PathBuf) {
   //link(cef_path.clone(), "Resources");
   cef_path.push("Resources");
